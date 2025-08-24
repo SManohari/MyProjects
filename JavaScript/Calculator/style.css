@@ -1,0 +1,39 @@
+body{
+  background-color: black;
+  font-family: Arial;
+}
+
+.orange-btn{
+  background-color:  rgb(254, 160, 10); 
+  color:white;
+}
+
+
+.black-btn{
+  background-color:  rgb(51, 51, 51);
+  color:white;
+}
+
+.num{
+  height:70px;
+  width:70px;
+  margin-top:15px;
+  margin-right:5px;
+  border-radius:50px;
+  border:none;
+  font-size:25px;
+}
+
+.clear-btn{
+  font-size:20px;
+}
+.calc{
+  color:white;
+  font-size:45px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  margin-left: 15px;
+  font-weight: bold;
+  background-color: black;
+  border: none;
+}
