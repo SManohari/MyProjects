@@ -1,0 +1,138 @@
+background-color
+color
+
+height
+width
+
+border
+======
+border-width: 2px;
+border-style:solid;
+border-color:red;
+border-radius :5px;
+border-bottom-width:1px;
+border-bottom-style:solid;
+border-bottom-color:gray;
+
+cursor : pointer
+
+font-size
+font-weight:bold
+
+transition : background-color 1s , color 1s
+
+pseudocode:
+==========
+hover
+active
+opacity
+
+box-shadow: inset 1px 2px 3px rgba(0,0,0,0.05); 
+
+box-model:
+=========
+padding
+margin
+border
+
+text style:
+===========
+font-family
+font-size
+font-weight
+font-style:italic
+text-decoration:underline
+text-align:center
+line-height:24px
+width:300px
+
+class name is more specific than selector 
+
+images:
+======
+object-fit:contain / cover
+object-position: left / right / top / bottom
+
+input type 
+==========
+textbox / radio / checkbox / button / submit
+placeholder
+
+display property:
+==================
+display : block ;
+display : inline-block ;
+
+grid:
+=====
+display : grid ;
+grid-template-columns:1fr 1fr 1fr;
+
+ 1fr --> will cover the remaining space
+     --> if we give 1fr , when we resize the screen it will adjust 
+     --> 2fr 
+     --> 3fr
+ 
+column-gap:20px ; --> it will give space between columns
+row-gap:40px ;--> it will give space between rows
+
+
+flex:
+=====
+display : flex;
+width:100px (or) flex:1 / 2 / 3
+flex-direction: row / column
+flex:1 /2 /3 --> will cover the remaining space
+justify-content : start /  end / center / space-between --> horizontally 
+align-items :start /  end / center / strech /  --> vertically
+flex-wrap: wrap;
+flex-shrink:0;  -- don't shrink
+width:0 -- shrink;
+
+
+Flex-direction: row
+justify-content -- horizontal
+align_items -- vertical
+
+Flex-direction: column
+justify-content  -- vertical
+align_items -- horizontal
+
+
+
+
+position:
+=========
+position:fixed; --> placed in the browser window
+top   : 5 px;
+bottom: 200px;
+left  :5px;
+right :10px;
+
+
+position:absolute; --> placed on the page 
+top   : 5 px;
+bottom: 200px;
+left  :5px;
+right :10px;
+ 
+z-index:100;
+
+position:relative;
+
+========================================================================
+Responsive Layout:
+==================
+
+@media(max-width:600px){
+  .container{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+
+================================================================
+iedk to iedk migarted 
+post cu fix
+
+================================================================
