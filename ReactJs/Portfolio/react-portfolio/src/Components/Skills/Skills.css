@@ -1,0 +1,150 @@
+.imgContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  width: 100%;
+  max-width: 1000px;
+  margin: 70px auto;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+  width: 100%;
+}
+
+.division {
+  display: flex;
+  gap: 30px;
+  padding: 15px 20px;
+  border-radius: 10px;
+  width: 48%;
+  box-sizing: border-box;
+} 
+
+.skillInfo {
+  width: 100px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.circleWrapper {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8px;
+  background-color: #19376D;
+}
+
+.skillImg {
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+}
+
+.skillInfo p {
+  margin: 0;
+  color: #ffffff;
+  font-size: 16px;
+  text-align: center;
+  font-family: Outfit;
+}
+
+.rectangle {
+  flex: 1;
+  background-color: #19376D; /* Main background */
+  padding: 15px 20px;         /* Add inner spacing */
+  border-radius: 10px;        /* Rounded corners */
+  background: linear-gradient(90deg,#19376D 0%,rgba(25,55,109,0) 100%);
+  transition: all 0.3s ease; /* Enables smooth hover transitions */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.rectangle:hover {
+  background: linear-gradient(135deg, #19376D, #3559C7); /* Gradient shift */
+  transform: scale(1.02); /* Slight grow */
+  /* box-shadow: 0 6px 16px rgba(53, 89, 199, 0.4);   */
+}
+
+.rectangle ul {
+  margin: 0;
+  padding-left: 20px;            /* Only left padding for bullets */
+  list-style-type: circle;
+}
+
+img{
+  background-color: transparent;
+}
+
+.imgContainer>p {
+  font-size: 40px;
+  font-weight: 800;
+  font-family: 'Outfit', sans-serif;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+  }
+
+  .division {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .skillInfo {
+    flex-direction: row;
+    gap: 15px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .rectangle {
+    width: 100%;
+    padding: 12px 16px;
+  }
+
+  .rectangle ul {
+    padding-left: 15px;
+  }
+}
+
+/* @media (max-width: 480px) {
+  .imgContainer > p {
+    font-size: 28px;
+  }
+
+  .circleWrapper {
+    width: 60px;
+    height: 60px;
+  }
+
+  .skillImg {
+    width: 38px;
+    height: 38px;
+  }
+
+  .skillInfo p {
+    font-size: 14px;
+  }
+
+  .rectangle {
+    font-size: 14px;
+  }
+} */
+
+
+

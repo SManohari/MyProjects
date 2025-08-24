@@ -1,0 +1,15 @@
+.para {
+  font-size: 0.8rem;
+  text-align: center;
+  padding: 20px 10px;
+  background-color: #04152d; /* Optional: gives footer a visual block */
+  color: #ffffff; /* Optional: make text visible on dark background */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .para {
+    font-size: 0.9rem;
+    padding: 25px 15px;
+  }
+}

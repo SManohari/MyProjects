@@ -1,0 +1,73 @@
+/* General styles */
+a {
+  text-decoration: none;
+}
+
+.navContainer {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+  padding: 20px 8%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #04152d;
+  z-index: 1000;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: 600;
+  font-family: 'Great Vibes', cursive;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.menuToggleIcon {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  display: none; /* Hidden on desktop */
+}
+
+/* Desktop menu */
+.menuItems {
+  display: flex;
+  list-style: none;
+  font-size: 20px;
+  gap: 40px;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .menuItems {
+    display: none; /* hide on mobile by default */
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #04152d;
+    width: 180px;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  }
+
+  .menuItems li {
+    margin-bottom: 15px;
+  }
+
+  .menuItems.showMenu {
+    display: flex; /* shown when menuOpen is true */
+  }
+
+  .menuToggleIcon {
+    display: block; /* show toggle icon on mobile */
+  }
+}

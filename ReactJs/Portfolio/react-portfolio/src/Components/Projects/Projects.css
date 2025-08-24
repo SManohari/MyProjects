@@ -1,0 +1,125 @@
+.projectContainer {
+  width: 100%;
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 0 20px;
+}
+
+.projectContainer > p {
+  font-size: 40px;
+  font-weight: 800;
+  font-family: 'Outfit', sans-serif;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+/* Grid rows */
+/* .rowProj {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+} */
+
+.rowProj{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 40px;
+  flex-wrap: wrap;
+  margin: 5%;
+}
+
+/* Individual project card */
+.projectClass {
+  background-color: #0b1d35;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 300px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  gap:15px;
+}
+
+.projectClass:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 255, 255, 0.3);
+}
+
+/* Project image */
+.projectClass img {
+  width: 100%;
+  height: 180px;         /* Fixed height for uniform cards */
+  object-fit: cover;     /* Crop to fill the space */
+  display: block;
+  border-bottom: 2px solid #04152d;
+}
+
+/* Buttons */
+.buttonClass {
+  display: flex;
+  justify-content:center;
+  width: 100%;
+  padding: 12px 0;
+  gap:40px;
+}
+
+.buttonClass a {
+  padding: 8px 18px;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color:#576CBC;
+}
+
+@media (max-width: 768px) {
+  .rowProj {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin: 0 auto;
+    justify-items: center;
+  }
+
+  .projectClass {
+    width: 90%; /* Take most of the screen */
+    max-width: 300px;
+  }
+
+  .buttonClass {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .buttonClass a {
+    width: 90%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .rowProj {
+    grid-template-columns: 1fr; /* Single column on small phones */
+    gap: 20px;
+    margin: 0 auto;
+  }
+
+  .projectContainer > p {
+    font-size: 28px;
+  }
+
+  .projectClass {
+    width: 95%;
+  }
+
+  .buttonClass a {
+    font-size: 13px;
+    padding: 10px 0;
+  }
+}
+
+
