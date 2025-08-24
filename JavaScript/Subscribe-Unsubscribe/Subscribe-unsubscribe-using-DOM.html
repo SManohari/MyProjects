@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM</title>
+  <style>
+    .css-subscribe-btn{
+      border:none;
+      background-color: black;
+      color:white;
+      padding-top: 10px;
+      padding-bottom:10px;
+      padding-left: 12px;
+      padding-right: 12px;
+      border-radius: 50px;
+      font-size: 14px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+
+    .is-subscribed{
+      background-color: rgb(240,240,240);
+      color:black;
+    }
+  </style>
+</head>
+<body>
+  <p>Click to Subscribe</p>
+  <button  onclick="subscribe();" class="js-subscribe-button   css-subscribe-btn">Subscribe</button>
+
+  <script>
+
+    function subscribe(){
+      const buttonElement = document.querySelector('.js-subscribe-button')
+
+      if(buttonElement.innerHTML === 'Subscribe'){
+        buttonElement.innerHTML = 'Subscribed';
+        buttonElement.classList.add('is-subscribed')
+      } else {
+        buttonElement.innerHTML = 'Subscribe';
+        buttonElement.classList.remove('is-subscribed')
+      }
+    }
+
+  </script>
+</body>
+</html>
